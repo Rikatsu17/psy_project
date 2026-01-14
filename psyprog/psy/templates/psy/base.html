@@ -2,17 +2,18 @@
 <html>
     <head>
         <title>PsyProg</title>
-        <link rel="stylesheet" type="text/css" href="{% static 'psy/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'psy/css/styles.css' %}">
+    
     </head>
     <body>
         <header>
             <h1>Welcome to PsyProg</h1>
-            <nav>
+            <nav class="navi_bar">
                 <ul>
-                    <li><a href="{% url 'home' %}">Home</a></li>
-                    <li><a href="{% url 'about' %}">About</a></li>
-                    <li><a href="{% url 'services' %}">Services</a></li>
-                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                    <li class="navi_item"><a href="{% url 'home' %}">Home</a></li>
+                    <li class="navi_item"><a href="{% url 'about' %}">About</a></li>
+                    <li class="navi_item"><a href="{% url 'services' %}">Services</a></li>
+                    <li class="navi_item"><a href="{% url 'contact' %}">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -21,6 +22,6 @@
             {% endblock %}
         </main>
         <footer>
-            <p>&copy; 2024 PsyProg. All rights reserved.</p>
+            <p class="foot">&copy; 2024 PsyProg. All rights reserved.</p>
         </footer>
 </html>

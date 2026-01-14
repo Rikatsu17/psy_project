@@ -16,3 +16,4 @@ class psy(models.Model):
     class Meta:
         verbose_name = 'Psychologist'
         verbose_name_plural = 'Psychologists'
+
